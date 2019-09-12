@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.maliyabrother.custom.ToolBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbarLeftImage"
+        android:layout_width="match_parent"
+        android:text="Toolbar"
+        app:leftDrawable="@drawable/ic_back_arrow"
+        app:toolbarTextColor="@color/colorWhite"
+        app:toolbarBackgroundColor="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <com.maliyabrother.custom.ToolBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbarRightImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLeftImage"
+        app:rightDrawable="@drawable/ic_close"
+        app:toolbarBackgroundColor="@color/colorPrimaryDark"
+        app:toolbarTextColor="@color/colorWhite" />
+
+
+    <com.maliyabrother.custom.ToolBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbarLeftTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarRightImage"
+        app:leftText="Back"
+        app:toolbarBackgroundColor="@color/colorAccent"
+        app:toolbarTextColor="@color/colorWhite" />
+
+    <com.maliyabrother.custom.ToolBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbarRightTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLeftTextView"
+        app:rightText="Add"
+        app:toolbarBackgroundColor="@color/colorPrimaryDark"
+        app:toolbarTextColor="@color/colorWhite" />
+
+    <com.maliyabrother.custom.ToolBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbarLeftRightTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarRightTextView"
+        app:rightText="Add"
+        app:leftText="Back"
+        app:toolbarBackgroundColor="@color/colorPrimaryDark"
+        app:toolbarTextColor="@color/colorWhite" />
+
+    <com.maliyabrother.custom.ToolBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbarLeftRightImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLeftRightTextView"
+        app:leftDrawable="@drawable/ic_back_arrow"
+        app:rightDrawable="@drawable/ic_close"
+        app:toolbarBackgroundColor="@color/colorPrimary"
+        app:toolbarTextColor="@color/colorWhite" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
